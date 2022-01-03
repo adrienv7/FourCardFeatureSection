@@ -1,0 +1,162 @@
+/* Variables */
+
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+/* globales */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.5;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  height: 100vh;
+  min-width: 320px;
+  margin: 0 auto;
+  background-color: var(--very-light-gray);
+}
+
+/* Estilos headings */
+
+.title-info {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+h1 {
+  color: var(--very-dark-blue);
+  font-size: 2.6rem;
+}
+
+h1 span {
+  font-weight: 200;
+  color: var(--grayish-blue);
+}
+
+.title-info p {
+  margin-top: 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--grayish-blue);
+}
+
+.cards-container {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  width: 70%;
+  height: 200px;
+  min-width: 288px;
+  max-width: 325px;
+  margin-bottom: 2rem;
+  padding: 2rem 3rem 0 2rem;
+  border-radius: 8px;
+  box-shadow: 0 12px 20px var(--grayish-blue);
+}
+
+.cyan {
+  border-top: 3px solid var(--cyan);
+}
+
+.red {
+  border-top: 3px solid var(--red);
+}
+
+.orange {
+  border-top: 3px solid var(--orange);
+}
+
+.blue {
+  border-top: 3px solid var(--blue);
+}
+
+.card h4 {
+  font-size: 2rem;
+  color: var(--very-dark-blue);
+}
+
+.card p {
+  font-size: 1.2rem;
+  color: var(--grayish-blue);
+  font-weight: 600;
+}
+
+.card img {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+}
+
+/* mediaqueries */
+@media (min-width: 1200px) {
+  .title-info {
+    width: 60%;
+    margin: 5rem auto;
+    padding: 0 100px;
+  }
+
+  h1 {
+    font-size: 3.6rem;
+  }
+
+  .title-info p {
+    font-weight: 400;
+  }
+
+  .cards-container {
+    position: relative;
+  }
+
+  .card:nth-child(1) {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+  }
+
+  .card:nth-child(4) {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .title-info {
+    width: 45%;
+  }
+
+  .card:nth-child(1) {
+    left: 340px;
+  }
+
+  .card:nth-child(4) {
+    right: 340px;
+  }
+}
