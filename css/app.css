@@ -147,7 +147,7 @@ h1 span {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1600px) {
   .title-info {
     width: 45%;
   }
